@@ -1,0 +1,37 @@
+package hu.jupi.teaching.login2rest;
+
+import javax.ws.rs.FormParam;
+
+public class LoginRequest {
+
+	@FormParam("email")
+	private String email;
+	
+	@FormParam("password")
+	private String password;
+
+	public LoginRequest() {
+	}
+
+	public LoginRequest(String email, String password) {
+		this.email = email;
+		this.password = password;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+}
